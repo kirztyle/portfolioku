@@ -1,0 +1,29 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Font standar */
+  line-height: 1.6;
+  color: #333; /* Warna teks */
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  background-color: #E5E1DA;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mengaktifkan scroll mulus di seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
