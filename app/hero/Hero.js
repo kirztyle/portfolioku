@@ -51,10 +51,10 @@ const Hero = () => {
             <a href="https://instagram.com/kirztyle_">
               <FontAwesomeIcon icon={faInstagram} size="2xl" />
             </a>
-            <a href="">
+            <a href="https://github.com/kirztyle/">
               <FontAwesomeIcon icon={faGit} size="2xl" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/muhammad-rafii16/">
               <FontAwesomeIcon icon={faLinkedin} size="2xl" />
             </a>
           </div>

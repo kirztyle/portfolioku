@@ -27,7 +27,7 @@ const Navbur = () => {
 
           {/* Desktop Links */}
           <ul className="hidden md:flex space-x-6">
-            {["#hero", "#about", "#services", "#projects", "/contact"].map(
+            {["#hero", "#about", "#services", "#projects", "#contact"].map(
               (href, index) => (
                 <li key={index}>
                   <Link
@@ -75,7 +75,7 @@ const Navbur = () => {
           }`}
         >
           <ul className="p-4 space-y-3">
-            {["#hero", "#about", "#services", "#projects", "/contact"].map(
+            {["#hero", "#about", "#services", "#projects", "#contact"].map(
               (href, index) => (
                 <li key={index}>
                   <Link
