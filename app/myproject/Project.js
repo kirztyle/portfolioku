@@ -7,22 +7,29 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce & Website",
+    title: "HR Dashboard",
     description:
-      "Designed and developed a fanpage website featuring artist biography, event listings, merchandise store, and music gallery. Integrated event information section with external links for ticket purchases, allowing visitors to easily access upcoming events and buy tickets.",
-    link: "https://example.com/ecommerce",
+      "Developed interactive data visualizations using Power BI to analyze a contract worker data model, providing in-depth insights into performance, turnover, and other key metrics.",
+    tools: "Microsoft Power BI, Microsoft Excel, SAP",
+    image: "./dashboard.png"
   },
   {
     id: 2,
     title: "Classification of Meat Freshness",
-    description: "Developed a machine learning model using Artificial Neural Networks (ANN) to classify beef as fresh or spoiled.",
-    link: "https://example.com/portfolio",
+    description:
+      "Developed a machine learning model using Artificial Neural Networks (ANN) to classify beef as fresh or spoiled.",
+    tools:
+      "Pandas, Numpy, Matplotlib, Seaborn, Plotly, Scikit-learn, TensorFlow, Keras",
+      image: "./ann.png"
   },
   {
     id: 3,
-    title: "HR Dashboard",
-    description: "Developed interactive data visualizations using Power BI to analyze a contract worker data model, providing in-depth insights into performance, turnover, and other key metrics.",
-    tools: "Microsoft Power BI, Microsoft Excel, SAP",
+    title: "E-Commerce & Website",
+    description:
+      "Designed and developed a fanpage website featuring artist biography, event listings, merchandise store, and music gallery. Integrated event information section with external links for ticket purchases, allowing visitors to easily access upcoming events and buy tickets.",
+    tools: "C#, HTML, javascript, CSS",
+    link: "Link Expired",
+    image: "./website.png",
   },
 ];
 
@@ -70,7 +77,7 @@ const PreviousProjects = () => {
                       <h3 className="text-xl font-semibold text-gray-800">
                         {project.title}
                       </h3>
-                      <p className="text-gray-600 mt-2">
+                      <p className="text-gray-600 mt-2 text-justify">
                         {project.description}
                       </p>
                     </div>
@@ -84,7 +91,7 @@ const PreviousProjects = () => {
                   {/* Pop-up */}
                   {openProjectId === project.id && (
                     <motion.div
-                      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                      className="fixed px-4 inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
                       initial="hidden"
                       animate="visible"
                       exit="hidden"
@@ -92,11 +99,20 @@ const PreviousProjects = () => {
                       transition={{ duration: 0.3 }}
                     >
                       <div className="bg-white p-6 rounded-lg shadow-lg max-w-screen-sm w-full">
-                        <h3 className="text-xl font-bold mb-4">
+                        <h3 className="text-xl text-justify font-bold mb-4">
                           {project.title}
                         </h3>
-                        <p className="text-gray-700">{project.description}</p>
-                        <p className="mt-4"><strong>Tools: </strong>{project.tools}</p>
+                        <p className="text-gray-700 text-justify">
+                          {project.description}
+                        </p>
+                        <p className="mt-4 ">
+                          <strong>Tools: </strong>
+                          {project.tools}
+                        </p>
+                        <p><strong>{project.link}</strong></p>
+                        <div className="mt-4 flex items-center justify-center shadow-lg">
+                        <img src={project.image} style={{ width: "500px" }} />
+                        </div>
                         <button
                           className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                           onClick={() => togglePopup(null)}
