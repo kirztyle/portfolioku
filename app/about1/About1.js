@@ -28,7 +28,7 @@ const About1 = () => {
           </h2>
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 grid-rows-2 gap-4">
             {/* Fullstack Web Development */}
-            <div className="flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faCode} size="2xl" />
               </div>
@@ -48,7 +48,7 @@ const About1 = () => {
               </div>
             </div>
             {/* Data Analyst */}
-            <div className="flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faChartColumn} size="2xl" />
               </div>
@@ -68,7 +68,7 @@ const About1 = () => {
               </div>
             </div>
             {/* UI/UX Design */}
-            <div className="flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faObjectUngroup} size="2xl" />
               </div>
@@ -88,7 +88,7 @@ const About1 = () => {
               </div>
             </div>
             {/* Database Management */}
-            <div className="flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faDatabase} size="2xl" />
               </div>
