@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import {
   faGit,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Typed from "typed.js";
 
 const Hero = () => {
   // Variants untuk animasi
@@ -14,6 +15,21 @@ const Hero = () => {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedElement.current, {
+      strings: ["Fullstack Developer", "Data Analyst", "AI Engineer"], // Array teks
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <motion.section
@@ -32,7 +48,7 @@ const Hero = () => {
               <span className="font-bold text-cyan-500">Muhammad Rafii</span>
             </h1>
             <div className="font-bold text-xl sm:text-3xl mt-2">
-              Fullstack Developer
+              <span ref={typedElement}></span>
             </div>
             <p className="mt-2 text-lg sm:text-xl">
               I love creating fun, innovative, and user-friendly web
