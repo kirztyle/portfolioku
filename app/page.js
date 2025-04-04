@@ -11,6 +11,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import PreviousProjects from "./myproject/Project";
 import Footer from "./contact/Contact";
+import ExperienceSection from "./expsec/expsec";
 config.autoAddCss = false;
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <div className="bg-customOne">
         <About />
+        <ExperienceSection />
         <About1 />
       </div>
       <PreviousProjects />

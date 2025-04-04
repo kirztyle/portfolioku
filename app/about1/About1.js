@@ -28,47 +28,48 @@ const About1 = () => {
           </h2>
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 grid-rows-2 gap-4">
             {/* Fullstack Web Development */}
-            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-2xl p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faCode} size="2xl" />
               </div>
               <div>
                 <h1 className="font-bold">Fullstack Web Development</h1>
                 <p className="text-justify">
-                  I specialize in creating scalable, responsive, and interactive
-                  web applications for businesses and startups.
+                  I build scalable, high-performance web applications that
+                  enhance user experience and drive business growth.
                 </p>
                 <p className="mt-4">
-                  <strong>Tools:</strong> React, Next.js, Node.js, Express,
-                  TailwindCSS, .NET MVC, Odoo
+                  <strong>Tools:</strong> Next.js, Node.js, Express,
+                  TailwindCSS, .NET MVC, Odoo, Power Apps, Laravel.
                 </p>
                 <p>
-                  <strong>Experience:</strong> 3 years of hands-on development
+                  <strong>Experience:</strong> 3+ years of hands-on development
                 </p>
               </div>
             </div>
             {/* Data Analyst */}
-            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-2xl p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faChartColumn} size="2xl" />
               </div>
               <div>
                 <h2 className="font-bold">Data Analyst</h2>
                 <p className="text-justify">
-                  I help businesses analyze and visualize data to uncover
-                  actionable insights and drive decision-making.
+                  I transform complex datasets into actionable insights using
+                  advanced analytics and visualization tools.
                 </p>
                 <p className="mt-4">
-                  <strong>Tools:</strong> Python, Pandas, Tableau, Power BI, SQL
+                  <strong>Tools:</strong> Python, Pandas, Tableau, Microsoft
+                  Power BI, SQL Server, MySQL, MongoDB, Microsoft Excel
                 </p>
                 <p>
-                  <strong>Experience:</strong> 2 years of working with data
+                  <strong>Experience:</strong> 2+ years of working with data
                   analytics
                 </p>
               </div>
             </div>
             {/* UI/UX Design */}
-            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-2xl p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faObjectUngroup} size="2xl" />
               </div>
@@ -88,7 +89,7 @@ const About1 = () => {
               </div>
             </div>
             {/* Database Management */}
-            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-lg p-10">
+            <div className="lg:flex sm:flex-col space-x-4 bg-white shadow-md rounded-2xl p-10">
               <div className="p-4">
                 <FontAwesomeIcon icon={faDatabase} size="2xl" />
               </div>

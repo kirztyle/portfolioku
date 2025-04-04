@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
 
           <Link
-            href="Muhammad_Rafii_CV.pdf"
+            href="https://drive.google.com/file/d/1Fi8CZ9Sk4nvxzBzw_IicJgpCfWBp_laV/view?usp=sharing"
             className="text-lg p-4 bg-cyan-400 text-black inline-block mt-4 rounded-2xl hover:bg-cyan-500 transition-all duration-450 ease-in-out"
           >
             Check out my CV

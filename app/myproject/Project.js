@@ -11,7 +11,7 @@ const projects = [
     description:
       "Developed interactive data visualizations using Power BI to analyze a contract worker data model, providing in-depth insights into performance, turnover, and other key metrics.",
     tools: "Microsoft Power BI, Microsoft Excel, SAP",
-    image: "./dashboard.png"
+    image: "./dashboard.png",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
       "Developed a machine learning model using Artificial Neural Networks (ANN) to classify beef as fresh or spoiled.",
     tools:
       "Pandas, Numpy, Matplotlib, Seaborn, Plotly, Scikit-learn, TensorFlow, Keras",
-      image: "./ann.png"
+    image: "./ann.png",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const PreviousProjects = () => {
   };
 
   const gridVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -109,9 +109,11 @@ const PreviousProjects = () => {
                           <strong>Tools: </strong>
                           {project.tools}
                         </p>
-                        <p><strong>{project.link}</strong></p>
+                        <p>
+                          <strong>{project.link}</strong>
+                        </p>
                         <div className="mt-4 flex items-center justify-center shadow-lg">
-                        <img src={project.image} style={{ width: "500px" }} />
+                          <img src={project.image} style={{ width: "500px" }} />
                         </div>
                         <button
                           className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
